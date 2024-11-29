@@ -1,0 +1,13 @@
+{
+  "name": "api",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --target=node --minify --outdir=out",
+    "start": "bun out/index.js"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.33.0",
+    "hono": "^4.6.2",
+    "nanoid": "^5.0.7"
+  }
+}
