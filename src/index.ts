@@ -1,13 +1,8 @@
 import { Hono } from "hono";
 import { produce } from "./data/produce";
 import { nutrients } from "./data/nutrients";
-// import { data } from "./data";
-// import { id } from "./utils/id";
-// import { produce, nutrients } from "./db";
-// import { or, like, eq } from "drizzle-orm";
-// import { drizzle } from "drizzle-orm/d1";
 
-const app = new Hono<{ Bindings: Env }>();
+const app = new Hono();
 
 app.get("/ping", (c) => c.text("ok"));
 
